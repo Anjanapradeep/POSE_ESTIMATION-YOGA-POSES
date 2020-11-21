@@ -20,7 +20,8 @@ ANGLE CALCULATION FOR ACCURACY
 
 For making the pose estimation little more accurate, for a particular pose,lets say, for a half squat there are particular angle measurements that has to be taken care of (i.e. spinal cord being straight, angle between the hip,knee and ankle, angle between the shoulder,elbow and wrist) and by formulating a method to calculate these angles when a pose is being identifed(differs for each pose being trained),it becomes more efficient to estimate accurate poses. 
 
-The json files are the model files which contains the training data for each of the poses trained.Two models has been trained each having 4 poses-training data.Hence for this project a model has been trained for totally 8 different poses A,B,C,D,q,w,e,r(reference poses).In place of these poses, while training the model during transfer learning process, provide basic yoga poses as inputs to achieve yoga pose estimation.
+The json file(qwer.json) contains the training data for each of the poses trained.q,w,e,r(reference poses).In place of these poses, while training the model during transfer learning process, provide basic yoga poses as inputs to achieve yoga pose estimation. Model files are generated while training the data and it is used for the deployment of the model.
+On identifying the correct pose, an audio alert is made to intimate the user that the desired pose has been achieved.
 
 It is recommended to refer the following topics before downloading /cloning and then run it in local :)
 1. p5.js(tutorial)-https://p5js.org/get-started/
